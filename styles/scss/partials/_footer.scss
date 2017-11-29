@@ -1,0 +1,51 @@
+/* --- Footer Section */
+
+#footer {
+    background-color: #222222;
+}
+
+.footer-nav {
+    display: grid;
+    padding: 50px 0px;
+    grid-auto-flow: column;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer-nav h2 {
+    color: #0aa047;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-imprint {
+    border-top: 1px solid #2d2d2d;
+    display: grid;
+    background-color: #222222;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    color: #434343;
+}
+
+.footer-imprint img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.footer-imprint p {
+    display: inline;
+    vertical-align: middle;
+    font-size: 12px;
+}

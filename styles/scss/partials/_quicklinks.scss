@@ -1,0 +1,33 @@
+/* --- Quicklinks Section */
+
+.quicklinks-content {
+    list-style: none;
+    padding: 20px;
+    overflow: auto;
+}
+
+.quicklinks-content li {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    height: 45px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.quicklinks-content li a {
+    display: inline;
+    color: #434343;
+    align-self: center;
+    justify-self: start;
+    text-decoration: none;
+}
+
+.quicklinks-content li i {
+    color: #bababa;
+    align-self: center;
+    display: inline;
+    text-align: right;
+    justify-self: end;
+}

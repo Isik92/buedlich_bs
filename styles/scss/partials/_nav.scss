@@ -1,0 +1,29 @@
+/* ----- Main Nav ----- */
+
+#header {
+    background-color: #495a48;
+}
+
+#header-nav {
+    display: grid;
+    background-color: white;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#header-nav ul {
+    text-align: center;
+    align-self: center;
+}
+
+#header-nav ul li {
+    display: inline;
+}
+
+#header-nav ul li a {
+    color: #434343;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-decoration: none;
+}

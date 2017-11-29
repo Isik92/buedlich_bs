@@ -1,0 +1,42 @@
+/* ----- Events ----- */
+
+.events-list {
+    list-style: none;
+}
+
+.events-content {
+    overflow: auto;
+    height: 440px;
+}
+
+.events-element {
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-column-gap: 20px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 0px;
+}
+
+.events-date {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.date-day {
+    text-align: center;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.date-month {
+    text-align: center;
+    font-size: 14px;
+    color: #0aa047;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
+#events-card {
+}

@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Open Sans, Arial";
+    color: #434343;
+    line-height: 1.5;
+    background-color: #eeeeee;
+
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;    
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #0aa047;
+}

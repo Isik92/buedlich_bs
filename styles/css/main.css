@@ -1,0 +1,353 @@
+/*--------------------------------------------------------------
+Base styles
+--------------------------------------------------------------*/
+html {
+  background-color: #eeeeee; }
+
+.card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px; }
+
+section {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
+.container-header {
+  display: grid;
+  border-bottom: 1px solid #ebebeb;
+  height: 50px; }
+
+.container-header h2 {
+  align-self: center;
+  font-size: 16px;
+  color: #434343;
+  font-weight: normal;
+  text-indent: 20px; }
+
+.container-footer {
+  border-top: 1px solid #ebebeb;
+  height: 50px; }
+
+.container-footer a {
+  text-align: center;
+  align-self: center; }
+
+/* --- Blog Section */
+.blog-content {
+  overflow: auto; }
+
+.blog-content article {
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.blog-content img {
+  object-fit: cover;
+  width: 220px;
+  height: 150px; }
+
+/* ----- Contact ----- */
+.contact-content {
+  overflow: auto;
+  height: 440px; }
+
+/* ----- Events ----- */
+.events-list {
+  list-style: none; }
+
+.events-content {
+  overflow: auto;
+  height: 440px; }
+
+.events-element {
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-column-gap: 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0px; }
+
+.events-date {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+
+.date-day {
+  text-align: center;
+  font-size: 24px;
+  padding: 0px;
+  margin: 0px; }
+
+.date-month {
+  text-align: center;
+  font-size: 14px;
+  color: #0aa047;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px; }
+
+/* --- Footer Section */
+#footer {
+  background-color: #222222; }
+
+.footer-nav {
+  display: grid;
+  padding: 50px 0px;
+  grid-auto-flow: column; }
+
+.footer ul {
+  list-style: none; }
+
+.footer-nav h2 {
+  color: #0aa047;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px; }
+
+.footer-nav a {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 12px; }
+
+.footer-imprint {
+  border-top: 1px solid #2d2d2d;
+  display: grid;
+  background-color: #222222;
+  vertical-align: middle;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+  color: #434343; }
+
+.footer-imprint img {
+  vertical-align: middle;
+  padding-right: 10px; }
+
+.footer-imprint p {
+  display: inline;
+  vertical-align: middle;
+  font-size: 12px; }
+
+/* --- Header Section */
+#header-nav {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+
+#header-image {
+  background-image: url("/assets/img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 270px; }
+
+.header-bg-strip {
+  background-color: #495a48;
+  width: 100vw; }
+
+/* ----- Main Nav ----- */
+#header {
+  background-color: #495a48; }
+
+#header-nav {
+  display: grid;
+  background-color: white;
+  height: 50px;
+  margin-bottom: 20px; }
+
+#header-nav ul {
+  text-align: center;
+  align-self: center; }
+
+#header-nav ul li {
+  display: inline; }
+
+#header-nav ul li a {
+  color: #434343;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  text-decoration: none; }
+
+/* --- Quicklinks Section */
+.quicklinks-content {
+  list-style: none;
+  padding: 20px;
+  overflow: auto; }
+
+.quicklinks-content li {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 20px;
+  margin-bottom: 10px; }
+
+.quicklinks-content li a {
+  display: inline;
+  color: #434343;
+  align-self: center;
+  justify-self: start;
+  text-decoration: none; }
+
+.quicklinks-content li i {
+  color: #bababa;
+  align-self: center;
+  display: inline;
+  text-align: right;
+  justify-self: end; }
+
+/*--------------------------------------------------------------
+CSS Resets
+--------------------------------------------------------------*/
+h1,
+h2,
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+/* ----- Service ----- */
+.service-content ul {
+  list-style: none;
+  padding: 20px;
+  overflow: auto;
+  height: 440px; }
+
+.service-element {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 20px;
+  margin-bottom: 10px; }
+
+.service-element a {
+  display: inline;
+  color: #434343;
+  align-self: center;
+  justify-self: start;
+  text-decoration: none; }
+
+.service-element i {
+  color: #bababa;
+  align-self: center;
+  display: inline;
+  text-align: right;
+  justify-self: end; }
+
+form {
+  padding: 20px; }
+
+input {
+  height: 45px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+  width: 100%; }
+
+input[type="text"] {
+  text-indent: 20px; }
+
+input[type="submit"] {
+  color: white;
+  background-color: #0aa047;
+  border-radius: 4px;
+  border: none; }
+
+textarea {
+  height: 120px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px; }
+
+/* --- Slider (to make it work) */
+#slides {
+  position: relative;
+  list-style-type: none;
+  height: 480px; }
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+.showing {
+  opacity: 1;
+  z-index: 2; }
+
+/* Slider (Styling) */
+#slider {
+  margin-bottom: 20px; }
+
+.slide {
+  box-sizing: border-box;
+  background: #333;
+  color: #000;
+  overflow: hidden; }
+
+.slide:nth-of-type(1) {
+  background: red; }
+
+.slide:nth-of-type(2) {
+  background: orange; }
+
+.slide:nth-of-type(3) {
+  background: green; }
+
+.slide:nth-of-type(4) {
+  background: blue; }
+
+.slide:nth-of-type(5) {
+  background: purple; }
+
+.slide-image {
+  background-color: blue;
+  padding: 0;
+  height: 480px; }
+
+.slide-image img {
+  object-fit: cover;
+  /* Do not scale the image */
+  object-position: center;
+  /* Center the image within the element */
+  width: 100%; }
+
+.slide-text {
+  background-color: white;
+  height: 100%;
+  padding: 20px; }
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans, Arial";
+  color: #434343;
+  line-height: 1.5;
+  background-color: #eeeeee; }
+
+h1 {
+  font-size: 22px;
+  font-weight: normal; }
+
+h2 {
+  font-size: 16px;
+  font-weight: normal; }
+
+p {
+  font-size: 14px; }
+
+a {
+  color: #0aa047; }

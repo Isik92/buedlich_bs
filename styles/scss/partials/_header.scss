@@ -1,0 +1,17 @@
+/* --- Header Section */
+
+#header-nav {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#header-image {
+    background-image: url("/assets/img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+}
+
+.header-bg-strip {
+    background-color: #495a48;
+    width: 100vw;
+}
