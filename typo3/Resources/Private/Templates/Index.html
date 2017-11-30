@@ -1,0 +1,90 @@
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <section id="content">
+
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-4" id="events-card">
+                    <div class="card container">
+                        <div class="container-header d-flex flex-row justify-content-left">
+                            <h2>Veranstaltungen</h2>
+                        </div>
+
+                        <div class="events-content">
+                            <f:cObject typoscriptObjectPath="lib.contentEvents" />
+                        </div>
+
+                        <div class="container-footer d-flex flex-row justify-content-center">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="container-header d-flex flex-row justify-content-left">
+                            <h2>Service</h2>
+                        </div>
+                        <div class="service-content">
+                            <f:cObject typoscriptObjectPath="lib.contentService" />
+                        </div>
+
+
+                        <div class="container-footer  d-flex flex-row justify-content-center">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="container-header d-flex flex-row justify-content-left">
+                            <h2>Kontakt</h2>
+                        </div>
+                        <div class="contact-content">
+                            <f:cObject typoscriptObjectPath="lib.contentContact" />
+                        </div>
+
+                        <div class="container-footer  d-flex flex-row justify-content-center">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="card blog-section">
+                        <div class="container-header d-flex flex-row justify-content-left">
+                            <h2>Blog</h2>
+                        </div>
+                        <div class="blog-content">
+                            <f:cObject typoscriptObjectPath="lib.contentBlog" />
+                        </div>
+
+                        <div class="container-footer  d-flex flex-row justify-content-center">
+                            <a href="#" class="boxmorelink">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="container-header d-flex flex-row justify-content-left">
+                            <h2>Quicklinks</h2>
+                        </div>
+
+                        <ul class="quicklinks-content">
+                            <f:cObject typoscriptObjectPath="lib.quicklinksNavigation" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</f:section>

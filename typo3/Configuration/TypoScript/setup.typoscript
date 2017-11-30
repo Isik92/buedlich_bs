@@ -1,0 +1,153 @@
+config {
+    baseUrl = {$baseUrl}
+
+    compressCss = {$compress}
+    compressJs = {$compress}
+
+    tx_realurl_enable = 1
+    absRefPrefix = /
+}
+
+page = PAGE
+page {
+    meta {
+        X-UA-Compatible = IE=edge
+        HandheldFriendly = True
+        viewport = width=device-width,initial-scale=1,maximum-scale=1
+    }
+
+    includeCSSLibs {
+        fontawesome = //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+        fontawesome.external = 1
+    }
+
+    includeCSS {
+    }
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths.10 = {$privateResources}/Templates/
+        layoutRootPaths.10 = {$privateResources}/Layouts/
+        partialRootPaths.10 = {$privateResources}/Partials/
+
+        templateName = TEXT
+        templateName.stdWrap.cObject = CASE
+        templateName.stdWrap.cObject {
+            key.data = pagelayout
+
+            1 = TEXT
+            1.value = Index
+
+            2 = TEXT
+            2.value = Page
+
+            default = TEXT
+            default.value = Page
+        }
+    }
+}
+
+page.includeCSS {
+    // Bootstrap CSS Datei
+    file_01 = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css
+    file_01.media = screen
+
+    file_02 = {$publicResources}/Css/main.css
+    file_02.media = screen
+}
+
+page.includeJSFooterlibs {
+    // jQuery api wird für die Bootstrap jQuery Funktionen gebraucht
+    file_01 = https://code.jquery.com/jquery-3.2.1.slim.min.js
+    file_01 {
+        external = 1
+        disableCompression = 1
+        excludeFromConcatenation = 1
+        forceontop = 1
+    }
+    // Bootstrap JS Datei
+    file_02 = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
+    file_03 = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js
+
+}
+
+
+[globalVar = TSFE:beUserLogin = 1]
+config.no_cache = 1
+config.contentObjectExceptionHandler = 0
+[end]
+
+lib.currentYear = TEXT
+lib.currentYear {
+    data = date:Y
+}
+
+
+
+lib.headerNavigation = HMENU
+lib.headerNavigation {
+    special = directory
+    special.value = 1
+
+    1 = TMENU
+    1.NO = 1
+    1.NO {
+        linkWrap = <li>|</li>
+    }
+}
+
+lib.content = CONTENT
+lib.content {
+    table = tt_content
+    select {
+        where = colPos=0
+        orderBy = sorting
+        languageField = sys_language_uid
+    }
+}
+
+lib.contentSidebar < lib.content
+lib.contentSidebar.select.where = colPos=5
+lib.contentSidebar.title = TEXT
+title.data = page:title
+
+lib.contentEvents < lib.content
+lib.contentEvents.select.where = colPos=10
+
+lib.contentService < lib.contentEvents
+lib.contentService.select.where = colPos=11
+
+lib.contentContact < lib.contentEvents
+lib.contentContact.select.where = colPos=12
+
+lib.contentBlog < lib.contentEvents
+lib.contentBlog.select.where = colPos=20
+
+lib.quicklinksNavigation < lib.headerNavigation
+lib.quicklinksNavigation.special.value = 5
+lib.quicklinksNavigation.1.NO {
+    linkWrap = <li class="quicklink">|<i class="fa fa-caret-right"></i></li>
+}
+
+lib.footerSitemap = HMENU
+lib.footerSitemap {
+    special = list
+    special.value = 3,11,12,13,14,15,16
+
+    1 = TMENU
+    1.expAll = 1
+
+    1.NO {
+        wrapItemAndSub = <div>|</div>
+        linkWrap = <h2>|</h2>
+        doNotLinkIt = 1
+    }
+
+    2 = TMENU
+    2.stdWrap.required = 1
+    2.wrap = <ul>|</ul>
+    2.NO {
+        ATagParams = class="footer-link"
+        linkWrap = <li>|</li>
+    }
+}

@@ -1,0 +1,23 @@
+<f:for each="{news}" as="news">
+    <article>
+
+
+        <f:if condition="{news.image -> f:count()} > 0">
+            <f:then>
+                <f:image src="{news.image.0.uid}" treatIdAsReference="1" width="220c" height="150c" />
+            </f:then>
+            <f:else>
+                <img src="fileadmin/Resources/Public/Images/default_thumbail.png" alt="default image">
+            </f:else>
+        </f:if>
+
+        <div>
+            <h1>{news.title}</h1>
+            <p>
+                <f:format.date date="{news.date}" format="F j, Y, g:i a" /><br> <br> 
+                {news.teaser}
+            </p>
+            <a href="#" class="link">Weiterlesen</a>
+        </div>
+    </article>
+</f:for>

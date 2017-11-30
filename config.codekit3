@@ -364,6 +364,239 @@
 		"oA": 0,
 		"oAP": "\/subpage.html",
 		"oF": 0
+		},
+	"\/typo3\/Configuration\/TypoScript\/setup.typoscript": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Configuration\/TypoScript\/setup.typoscript",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Layouts\/Default.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Layouts\/Default.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/GgNews\/News\/ListEvent.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/GgNews\/News\/ListEvent.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/GgNews\/News\/ListNews.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/GgNews\/News\/ListNews.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/Index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/Index.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/Mask\/bigteaser.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/Mask\/bigteaser.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/Mask\/iconlinklist.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/Mask\/iconlinklist.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/old_Index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/old_Index.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/old_Page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/old_Page.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/Page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/Page.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Public\/Css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/typo3\/Resources\/Public\/Images\/blog-thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 15704,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/blog-thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/default_thumbail.png": {
+		"ft": 32768,
+		"iS": 18620,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/default_thumbail.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/header.jpg": {
+		"ft": 16384,
+		"iS": 103424,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/logo.png": {
+		"ft": 32768,
+		"iS": 7936,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/placeholder.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/placeholder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/slider-image.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/slider-image.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/thumbnail.png": {
+		"ft": 32768,
+		"iS": 49528,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/thumbnail.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/wallpaper.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/wallpaper.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/wappen.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/wappen.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/Resources\/Public\/Images\/wappen_icon.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Public\/Images\/wappen_icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/typo3\/user_upload\/_temp_\/importexport\/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/_temp_\/importexport\/.htaccess",
+		"oF": 0
+		},
+	"\/typo3\/user_upload\/_temp_\/importexport\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/_temp_\/importexport\/index.html",
+		"oF": 0
+		},
+	"\/typo3\/user_upload\/_temp_\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/_temp_\/index.html",
+		"oF": 0
+		},
+	"\/typo3\/user_upload\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/index.html",
+		"oF": 0
+		},
+	"\/typo3\/user_upload\/kontaktform.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/kontaktform.yaml",
+		"oF": 0
+		},
+	"\/typo3\/user_upload\/test.png": {
+		"ft": 32768,
+		"iS": 8456,
+		"oA": 0,
+		"oAP": "\/typo3\/user_upload\/test.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [

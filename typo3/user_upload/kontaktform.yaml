@@ -1,0 +1,71 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: kontaktform
+label: Kontaktform
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Nachricht von {text-1}'
+      recipientAddress: oezkani@icloud.com
+      recipientName: 'Gemeinde Büdlich'
+      senderAddress: '{text-3}'
+      senderName: '{text-1}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '45'
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Step'
+      nextButtonLabel: 'next Step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-3
+        label: Email
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Deine Email Adresse'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Nachname, Vorname'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Nachricht
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Deine Nachricht'

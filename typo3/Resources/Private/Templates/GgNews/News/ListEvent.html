@@ -1,0 +1,21 @@
+<f:for each="{news}" as="news">
+
+    <li class="events-element">
+        <div class="events-date">
+            <div class="date">
+                <p class="date-day">
+                    <f:format.date date="{news.date}" format="d" />
+                </p>
+                <p class="date-month">
+                    <f:format.date date="{news.date}" format="M" />
+                </p>
+            </div>
+        </div>
+        <article class="events-text">
+            <h2>{news.title}</h2>
+            <p>{news.teaser}</p>
+            <a href="#">Weiterlesen</a>
+        </article>
+    </li>
+    
+</f:for>

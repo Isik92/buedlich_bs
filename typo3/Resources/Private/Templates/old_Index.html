@@ -1,0 +1,81 @@
+<f:layout name="Default" />
+
+<f:section name="content">
+    <f:cObject typoscriptObjectPath="lib.content" />
+
+    <!-- Events -->
+    <section class="events container">
+        <div class="container-header">
+            <h2>Veranstaltungen</h2>
+        </div>
+        <div class="events-content">
+            <f:cObject typoscriptObjectPath="lib.contentEvents" />
+        </div>
+        <div class="container-footer">
+            <a href="#">More</a>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service container">
+        <div class="container-header">
+            <h2>Service</h2>
+        </div>
+
+        <div class="service-content">
+            <f:cObject typoscriptObjectPath="lib.contentService" />
+        </div>
+
+        <div class="container-footer">
+            <a href="#">More</a>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact container">
+        <div class="container-header">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="contact-content">
+            <f:cObject typoscriptObjectPath="lib.contentContact" />
+
+        </div>
+
+        <div class="container-footer">
+            <a href="#">More</a>
+        </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+
+        <div class="container-header">
+            <h2>Blog</h2>
+        </div>
+        <div class="blog-content">
+            <f:cObject typoscriptObjectPath="lib.contentBlog" />
+        </div>
+
+        <div class="container-footer">
+            <a href="#" class="boxmorelink">More</a>
+        </div>
+
+    </section>
+
+    <!-- Quicklinkls -->
+    <section class="quicklinks">
+
+        <div class="container-header">
+            <h2>Quicklinks</h2>
+        </div>
+
+        <ul class="quicklinks-content">
+            <li class="quicklink">
+                <f:cObject typoscriptObjectPath="lib.quicklinksNavigation" />
+            </li>
+        </ul>
+
+    </section>
+</f:section>

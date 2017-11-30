@@ -1,0 +1,8 @@
+<ul>
+    <f:for each="{data.tx_mask_links}" as="link">
+        <li class="service-element">
+            <f:link.typolink parameter="{link.tx_mask_link_link}">{link.tx_mask_link_title}</f:link.typolink>
+            <i class="fa fa-caret-right"></i>
+        </li>
+    </f:for>
+</ul>
