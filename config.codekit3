@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
 	"\/assets\/img\/blog-thumbnail.jpg": {
 		"ft": 16384,
 		"iS": 36033,
@@ -94,6 +101,13 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/blog.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -129,9 +143,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -318,6 +332,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/styles\/scss\/partials\/_subpage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/scss\/partials\/_subpage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/styles\/scss\/partials\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -330,6 +357,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/subpage.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/subpage.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -338,7 +372,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 533589469,
-	"displayValue": "buedlich_v3",
+	"displayValue": "buedlich_bs",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-doge"
 	},

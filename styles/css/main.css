@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 Base styles
 --------------------------------------------------------------*/
-html {
+body {
   background-color: #eeeeee; }
 
 .card {
@@ -9,9 +9,10 @@ html {
   border-radius: 4px;
   margin-bottom: 20px; }
 
+.container {
+  padding: 0px; }
+
 section {
-  background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 3px; }
 
 .container-header {
@@ -90,6 +91,7 @@ section {
 
 /* --- Footer Section */
 #footer {
+  margin-top: 20px;
   background-color: #222222; }
 
 .footer-nav {
@@ -327,6 +329,67 @@ textarea {
   height: 100%;
   padding: 20px; }
 
+/* --- Main Section */
+.main {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 0px; }
+
+.main-sidebar {
+  padding: 20px;
+  border-right: 1px solid #ebebeb; }
+
+.main-sidebar h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #0aa047;
+  padding-bottom: 20px; }
+
+.sidebar-links {
+  list-style: none; }
+
+.sidebar-links li a {
+  color: #686868;
+  text-decoration: none;
+  line-height: 2; }
+
+.content-heading {
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0; }
+
+.content-heading h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  align-self: center;
+  padding-left: 20px;
+  color: #434343; }
+
+.article-img {
+  background-color: grey;
+  background-image: url(../../etc/B%C3%BCdlich_4.JPG);
+  height: 300px;
+  background-position: center;
+  background-size: cover; }
+
+.article-header {
+  padding-top: 30px;
+  font-size: 24px;
+  color: #434343;
+  margin-bottom: 10px; }
+
+.article {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.subpage-main {
+  background-color: white; }
+
+.article-content {
+  margin-top: 10px;
+  line-height: 150%;
+  font-size: 16px; }
+
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
@@ -337,6 +400,9 @@ html {
   color: #434343;
   line-height: 1.5;
   background-color: #eeeeee; }
+
+body {
+  font-family: "Open Sans"; }
 
 h1 {
   font-size: 22px;

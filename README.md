@@ -1,2 +1,2 @@
 # Buedlich web
-og-buedlich.de static markup
+og-buedlich.de website

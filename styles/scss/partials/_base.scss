@@ -4,6 +4,9 @@ Base styles
 --------------------------------------------------------------*/
 
 html {
+}
+
+body {
     background-color: #eeeeee;
 }
 
@@ -14,9 +17,11 @@ html {
 
 }
 
+.container {
+    padding: 0px;
+}
+
 section {
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 }
 
