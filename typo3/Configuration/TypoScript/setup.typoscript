@@ -17,11 +17,28 @@ page {
     }
 
     includeCSSLibs {
+        bootstrap = //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css
+        bootstrap.external = 1
+        bootstrap.media = screen
+
         fontawesome = //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
         fontawesome.external = 1
     }
 
+    includeJSFooterlibs {
+        jquery = //cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+        jquery {
+            external = 1
+            forceOnTop = 1
+        }
+        popper = //cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
+        bootstrapjs = //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js
+
+    }
+
     includeCSS {
+        main = {$publicResources}/Css/main.css
+        main.media = screen
     }
 
     10 = FLUIDTEMPLATE
@@ -47,31 +64,6 @@ page {
     }
 }
 
-page.includeCSS {
-    // Bootstrap CSS Datei
-    file_01 = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css
-    file_01.media = screen
-
-    file_02 = {$publicResources}/Css/main.css
-    file_02.media = screen
-}
-
-page.includeJSFooterlibs {
-    // jQuery api wird für die Bootstrap jQuery Funktionen gebraucht
-    file_01 = https://code.jquery.com/jquery-3.2.1.slim.min.js
-    file_01 {
-        external = 1
-        disableCompression = 1
-        excludeFromConcatenation = 1
-        forceontop = 1
-    }
-    // Bootstrap JS Datei
-    file_02 = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
-    file_03 = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js
-
-}
-
-
 [globalVar = TSFE:beUserLogin = 1]
 config.no_cache = 1
 config.contentObjectExceptionHandler = 0
@@ -81,8 +73,6 @@ lib.currentYear = TEXT
 lib.currentYear {
     data = date:Y
 }
-
-
 
 lib.headerNavigation = HMENU
 lib.headerNavigation {
@@ -149,5 +139,35 @@ lib.footerSitemap {
     2.NO {
         ATagParams = class="footer-link"
         linkWrap = <li>|</li>
+    }
+}
+
+lib.sidebar = COA
+lib.sidebar {
+    stdWrap.required = 1
+    stdWrap.dataWrap = <h3 class="sidebar-header">{levelfield:-1,nav_title,slide}</h3><div class="sidebar-widget widget_categories"><ul>|</ul></div>
+
+    20 = HMENU
+    20 {
+        entryLevel = 1
+        excludeUidList =
+        1 = TMENU
+        1 {
+            NO {
+                wrapItemAndSub = <li class="cat-item cat-item-6">|</li>
+                stdWrap.innerWrap = <i class="fa fa-angle-right"></i>&nbsp;|
+            }
+            ACT < .NO
+            ACT = 1
+            ACT.doNotLinkIt = 1
+        }
+        2 = TMENU
+        2 {
+            wrap = <ul>|</ul>
+            NO {
+                wrapItemAndSub = <li class="cat-item cat-item-6">|</li>
+                stdWrap.innerWrap = <i class="fa fa-angle-right"></i>&nbsp;|
+            }
+        }
     }
 }
