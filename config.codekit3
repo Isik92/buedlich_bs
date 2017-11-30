@@ -342,13 +342,6 @@
 		"oAP": "\/subpage.html",
 		"oF": 0
 		},
-	"\/typo3\/Configuration\/TypoScript\/setup.typoscript": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/typo3\/Configuration\/TypoScript\/setup.typoscript",
-		"oF": 0
-		},
 	"\/typo3\/Resources\/Private\/Layouts\/Default.html": {
 		"cB": 0,
 		"ft": 8192,
