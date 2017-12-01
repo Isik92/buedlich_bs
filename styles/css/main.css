@@ -52,10 +52,17 @@ section {
   width: 220px;
   height: 150px; }
 
+.article div img {
+  height: 300px;
+  width: 100%; }
+
 /* ----- Contact ----- */
 .contact-content {
   overflow: auto;
   height: 440px; }
+
+button.btn.btn-primary {
+  background-color: #0aa047; }
 
 /* ----- Events ----- */
 .events-list {
@@ -63,7 +70,8 @@ section {
 
 .events-content {
   overflow: auto;
-  height: 440px; }
+  height: 440px;
+  padding: 0 20px; }
 
 .events-element {
   display: grid;
@@ -73,7 +81,9 @@ section {
   padding: 20px 0px; }
 
 .events-date {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  padding: 10px; }
 
 .date-day {
   text-align: center;
@@ -88,6 +98,9 @@ section {
   text-transform: uppercase;
   padding: 0px;
   margin: 0px; }
+
+.events-text h2 {
+  margin-bottom: 10px; }
 
 /* --- Footer Section */
 #footer {
@@ -264,6 +277,52 @@ textarea {
   width: 100%;
   padding: 15px; }
 
+.carousel {
+  height: 540px;
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden; }
+
+.slide-image {
+  height: 100%;
+  padding: 0; }
+
+.slide-text {
+  margin: 10px;
+  margin: 0;
+  padding: 20px; }
+
+.slide-text h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 150%; }
+
+.slide-image .col-4 {
+  padding: 0; }
+
+a.carousel-control-prev, a.carousel-control-next {
+  background-color: black;
+  opacity: 0.1; }
+
+a.carousel-control-prev:hover, a.carousel-control-next:hover {
+  background-color: black;
+  opacity: 0.2; }
+
+a.carousel-control-prev:active, a.carousel-control-next:active {
+  background-color: black;
+  opacity: 0.1; }
+
+a.carousel-control-prev:focus, a.carousel-control-next:focus {
+  background-color: black;
+  opacity: 0.1; }
+
 /* --- Main Section */
 .main {
   background-color: white;
@@ -352,3 +411,10 @@ p {
 
 a {
   color: #0aa047; }
+
+.cat-item {
+  list-style: none; }
+
+.cat-item a {
+  color: #686868;
+  line-height: 200%; }
