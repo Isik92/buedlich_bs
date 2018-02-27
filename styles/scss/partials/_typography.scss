@@ -20,6 +20,7 @@ body {
 h1 {
     font-size: 22px;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -42,4 +43,14 @@ a {
 .cat-item a{
     color: rgb(104, 104, 104);
     line-height: 200%;
+}
+
+#date-output {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #434343;
 }

@@ -1,0 +1,6 @@
+<f:for each="{data.tx_mask_slides}" as="slide">
+    <h1>{slide.slide_header}</h1>
+    <f:format.raw>{slide.slide_body_text}</f:format.raw>
+    <f:image src="{slide.slide_image.uid} treatIdAsReference="1" />
+    <f:link.typolink target="{slide.slide_link}">Mehr anzeigen</f:link.typolink>
+</f:for>

@@ -153,6 +153,16 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/styles\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/styles\/scss\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -342,6 +352,13 @@
 		"oAP": "\/subpage.html",
 		"oF": 0
 		},
+	"\/typo3\/Configuration\/TypoScript\/setup.typoscript": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Configuration\/TypoScript\/setup.typoscript",
+		"oF": 0
+		},
 	"\/typo3\/Resources\/Private\/Layouts\/Default.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -382,6 +399,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/typo3\/Resources\/Private\/Templates\/Mask\/iconlinklist.html",
+		"oF": 0
+		},
+	"\/typo3\/Resources\/Private\/Templates\/Mask\/slider.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/typo3\/Resources\/Private\/Templates\/Mask\/slider.html",
 		"oF": 0
 		},
 	"\/typo3\/Resources\/Private\/Templates\/old_Index.html": {
